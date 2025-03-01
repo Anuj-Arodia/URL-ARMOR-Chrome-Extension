@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Malicious URL Checker</h2>
+    <input type="text" id="urlInput" placeholder="Enter URL">
+    <button id="checkBtn">Check</button>
+    <p id="result"></p>
+
+    <button id="reportBtn">Report Suspicious Site</button>
+
+    <h3>Manage URLs</h3>
+    <input type="text" id="urlManageInput" placeholder="Enter URL">
+    <button id="flagBtn">Flag as Suspicious</button>
+    <button id="whitelistBtn">Whitelist</button>
+
+    <h3>Flagged URLs</h3>
+    <ul id="flaggedList"></ul>
+
+    <h3>Whitelisted URLs</h3>
+    <ul id="whitelistList"></ul>
+
+    <script src="popup.js"></script>
+</body>
+</html>
