@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Malicious URL Checker",
+  "version": "1.3",
+  "description": "Detect and warn users about malicious websites.",
+  "permissions": ["storage", "activeTab", "scripting", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "splash.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [{
+    "resources": ["warning.html"],
+    "matches": ["<all_urls>"]
+  }]
+}
